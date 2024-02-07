@@ -11,6 +11,7 @@ const getSum = () => {
 		totalSum += Number(prices[i].innerText);
 	}
 	const tr = document.createElement("tr");
+	tr.id = "ans";
 	tr.innerHTML = `
 		<td>${totalSum}<td>
 		`;
